@@ -9,3 +9,6 @@ frontend/node_modules/
 backend/.matplotlib_cache/
 backend/medihybrid.db
 backend/medihybrid.db-*
+__pycache__/
+*.py[cod]
+frontend/dist/

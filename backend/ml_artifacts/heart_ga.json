@@ -1,0 +1,105 @@
+{
+  "disease": "Heart Disease",
+  "total_features": 13,
+  "selected_count": 10,
+  "all_features": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "selected_features": [
+    "sex",
+    "cp",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "ca",
+    "thal"
+  ],
+  "chromosome": [
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1
+  ],
+  "evolution_history": [
+    {
+      "generation": 0,
+      "best_fitness": 0.8086,
+      "features_count": 8
+    },
+    {
+      "generation": 1,
+      "best_fitness": 0.8928,
+      "features_count": 9
+    },
+    {
+      "generation": 2,
+      "best_fitness": 0.8928,
+      "features_count": 9
+    },
+    {
+      "generation": 3,
+      "best_fitness": 0.8928,
+      "features_count": 9
+    },
+    {
+      "generation": 4,
+      "best_fitness": 0.8928,
+      "features_count": 9
+    },
+    {
+      "generation": 5,
+      "best_fitness": 0.9094,
+      "features_count": 11
+    },
+    {
+      "generation": 6,
+      "best_fitness": 0.9364,
+      "features_count": 10
+    },
+    {
+      "generation": 7,
+      "best_fitness": 0.9364,
+      "features_count": 10
+    },
+    {
+      "generation": 8,
+      "best_fitness": 0.9364,
+      "features_count": 10
+    },
+    {
+      "generation": 9,
+      "best_fitness": 0.9364,
+      "features_count": 10
+    },
+    {
+      "generation": 10,
+      "best_fitness": 0.9364,
+      "features_count": 10
+    }
+  ],
+  "method": "DEAP Genetic Algorithm (Tournament Selection + 2-Point Crossover + Bit-Flip Mutation)"
+}

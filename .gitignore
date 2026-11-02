@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+frontend/node_modules/
+backend/.matplotlib_cache/
+backend/medihybrid.db
+backend/medihybrid.db-*

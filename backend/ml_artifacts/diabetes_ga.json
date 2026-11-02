@@ -1,0 +1,89 @@
+{
+  "disease": "Diabetes",
+  "total_features": 8,
+  "selected_count": 4,
+  "all_features": [
+    "Pregnancies",
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI",
+    "DiabetesPedigreeFunction",
+    "Age"
+  ],
+  "selected_features": [
+    "Glucose",
+    "BloodPressure",
+    "BMI",
+    "Age"
+  ],
+  "chromosome": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    1,
+    0,
+    1
+  ],
+  "evolution_history": [
+    {
+      "generation": 0,
+      "best_fitness": 0.8163,
+      "features_count": 5
+    },
+    {
+      "generation": 1,
+      "best_fitness": 0.8259,
+      "features_count": 2
+    },
+    {
+      "generation": 2,
+      "best_fitness": 0.8191,
+      "features_count": 2
+    },
+    {
+      "generation": 3,
+      "best_fitness": 0.8413,
+      "features_count": 4
+    },
+    {
+      "generation": 4,
+      "best_fitness": 0.8413,
+      "features_count": 4
+    },
+    {
+      "generation": 5,
+      "best_fitness": 0.8413,
+      "features_count": 4
+    },
+    {
+      "generation": 6,
+      "best_fitness": 0.8413,
+      "features_count": 4
+    },
+    {
+      "generation": 7,
+      "best_fitness": 0.8413,
+      "features_count": 4
+    },
+    {
+      "generation": 8,
+      "best_fitness": 0.8413,
+      "features_count": 4
+    },
+    {
+      "generation": 9,
+      "best_fitness": 0.8413,
+      "features_count": 4
+    },
+    {
+      "generation": 10,
+      "best_fitness": 0.8413,
+      "features_count": 4
+    }
+  ],
+  "method": "DEAP Genetic Algorithm (Tournament Selection + 2-Point Crossover + Bit-Flip Mutation)"
+}

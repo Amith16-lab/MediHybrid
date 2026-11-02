@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: '',
-  timeout: 15000,
+  baseURL: import.meta.env.VITE_API_BASE_URL || '',
+  timeout: 20000,
 });
 
 export const healthCheck = () => api.get('/api/health');

@@ -89,7 +89,10 @@ export default function DiabetesAssessment({ onAssessmentCompleted }) {
       // Navigate to results page with prediction payload
       navigate('/results', { state: { result: res.data } });
     } catch (err) {
-      setError(err.response?.data?.detail || "Prediction request could not be processed. Verify backend service is running.");
+      const msg = err.response?.data?.detail 
+        || (err.response?.status === 404 ? "Backend API route not found (404). Verify your Python backend is deployed or check VITE_API_BASE_URL." : null)
+        || "Prediction request could not be processed. Verify backend services are active and reachable.";
+      setError(msg);
     } finally {
       setLoading(false);
     }

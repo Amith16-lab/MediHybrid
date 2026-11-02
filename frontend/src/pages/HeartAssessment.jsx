@@ -91,7 +91,10 @@ export default function HeartAssessment({ onAssessmentCompleted }) {
       onAssessmentCompleted(res.data);
       navigate('/results', { state: { result: res.data } });
     } catch (err) {
-      setError(err.response?.data?.detail || "Heart disease assessment failed. Verify backend services.");
+      const msg = err.response?.data?.detail 
+        || (err.response?.status === 404 ? "Backend API route not found (404). Verify your Python backend is deployed or check VITE_API_BASE_URL." : null)
+        || "Heart disease assessment failed. Verify backend services are active and reachable.";
+      setError(msg);
     } finally {
       setLoading(false);
     }
